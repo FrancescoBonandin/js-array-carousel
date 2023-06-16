@@ -7,19 +7,21 @@ const slider = [`img/01.webp`,`img/02.webp`,
  for(i;i<slider.length;i++){
 
     let arrayElement = slider[i]
+    itemContainer.innerHTML += `<img src = "${arrayElement} " class = "item" >`
 
     // const newItem = document.createElement("img")
 
     // newItem.setAttribute("src", ` ${arrayElement} `)
 
 
-    newItem.classList.add("item")
+    // newItem.classList.add("item")
 
     // itemContainer.append(newItem)
 
     if(slider[i] == slider[0]){
 
-        newItem.classList.add("active")
+        //  newItem.classList.add("active")
+        itemContainer.querySelector(".item").classList.add("active")
 
     }
     
