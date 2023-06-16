@@ -43,6 +43,12 @@ const slider = [`img/01.webp`,`img/02.webp`,
      document.querySelector(`img:nth-of-type(${j})`).classList.remove("active")
  
      j++
+
+     if(j > slider.length){
+        
+        j=1;      
+
+     }
  
      document.querySelector(`img:nth-of-type(${j})`).classList.add("active")
 
@@ -57,6 +63,12 @@ const slider = [`img/01.webp`,`img/02.webp`,
      document.querySelector(`img:nth-of-type(${j})`).classList.remove("active")
  
      j--
+
+     if(j<=0){
+        
+        j=slider.length 
+    
+     }
     
      document.querySelector(`img:nth-of-type(${j})`).classList.add("active")
  
