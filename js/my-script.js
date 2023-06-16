@@ -8,16 +8,19 @@ const slider = [`img/01.webp`,`img/02.webp`,
 
     let arrayElement = slider[i]
 
-    const newItem = document.createElement("img")
+    // const newItem = document.createElement("img")
 
-    newItem.setAttribute("src", ` ${arrayElement} `)
+    // newItem.setAttribute("src", ` ${arrayElement} `)
+
 
     newItem.classList.add("item")
 
-    itemContainer.append(newItem)
+    // itemContainer.append(newItem)
 
     if(slider[i] == slider[0]){
+
         newItem.classList.add("active")
+
     }
     
  }
